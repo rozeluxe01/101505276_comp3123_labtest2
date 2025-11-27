@@ -42,21 +42,6 @@ appid — API key
 
 units=metric — Celsius
 
-📁 Project Structure
-src/
-│
-├── components/
-│   ├── SearchBar.jsx
-│   ├── WeatherCard.jsx
-│   ├── SearchBar.css
-│   └── WeatherCard.css
-│
-├── App.jsx
-├── App.css
-├── index.js
-├── index.css
-└── ...
-
 📸 Screenshots
 
 Example:
