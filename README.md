@@ -59,7 +59,6 @@ src/
 
 📸 Screenshots
 
-(Insert your app screenshot here)
 Example:
 
 ![Weather App Screenshot](./assets/weather_app_screenshot.png)
