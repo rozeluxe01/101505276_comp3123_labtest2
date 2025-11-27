@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
+import "./App.css";
 
 const API_BASE = "https://api.openweathermap.org/data/2.5/weather";
 
@@ -43,10 +43,9 @@ function App() {
 
   return (
     <div className="app">
-      <SearchBar onSearch={handleSearch} defaultCity={city} />
       {loading && <p>Loading...</p>}
       {error && <p className="error">{error}</p>}
-      {weather && <WeatherCard data={weather} />}
+      {weather && <WeatherCard data={weather} onSearch={handleSearch} />}
     </div>
   );
 }

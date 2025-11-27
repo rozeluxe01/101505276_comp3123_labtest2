@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+🌤️ Weather App – COMP3123 Lab Test 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based weather application that allows users to search for a city and view its current weather information using the OpenWeather API.
+This project implements component-based design, API integration, environment variables, and UI styling.
 
-## Available Scripts
+📦 Installation & Setup
+1️⃣ Clone the repository
+git clone <https://github.com/rozeluxe01/101505276_comp3123_labtest2>
 
-In the project directory, you can run:
+2️⃣ Install dependencies
+npm install
 
-### `npm start`
+3️⃣ Create your .env file
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+At the root of the project (same level as package.json):
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+REACT_APP_WEATHER_API_KEY=your_api_key_here
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⚠️ You must restart the server after adding .env.
 
-### `npm run build`
+4️⃣ Start the development server
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app will run at:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+http://localhost:3000
 
-### `npm run eject`
+🌐 API Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project uses the current weather endpoint from OpenWeather:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://api.openweathermap.org/data/2.5/weather
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Query includes:
 
-## Learn More
+q — city
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+appid — API key
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+units=metric — Celsius
 
-### Code Splitting
+📁 Project Structure
+src/
+│
+├── components/
+│   ├── SearchBar.jsx
+│   ├── WeatherCard.jsx
+│   ├── SearchBar.css
+│   └── WeatherCard.css
+│
+├── App.jsx
+├── App.css
+├── index.js
+├── index.css
+└── ...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📸 Screenshots
 
-### Analyzing the Bundle Size
+(Insert your app screenshot here)
+Example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Weather App Screenshot](./assets/weather_app_screenshot.png)
 
-### Making a Progressive Web App
+![Postman Screenshot](./assets/postman_screenshot.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Author
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Kevin George Buhain
+COMP3123 – Lab Test 2
+George Brown College

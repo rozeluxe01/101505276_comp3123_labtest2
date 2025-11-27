@@ -1,7 +1,8 @@
 import { useState } from "react";
+import "./SearchBar.css";
 
-function SearchBar({ onSearch, defaultCity }) {
-  const [value, setValue] = useState(defaultCity || "");
+function SearchBar({ onSearch }) {
+  const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
